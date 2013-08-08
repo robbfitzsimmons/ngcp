@@ -1,0 +1,159 @@
+/************************************************************************\
+                        LANDING PAGE SPECIFIC STYLES
+\************************************************************************/
+
+/************************************************************************\
+                                 HERO
+\************************************************************************/
+.hero-area {
+  position: relative;
+}
+.hero-logo-wrap {
+  .hero-logo {
+    width: 320px;
+  }
+  .hero-icon {
+    width: 70px;
+  }
+
+  .hero-logo-full-wrap {
+    top: 10%;
+  }
+  .hero-logo-icon-wrap {
+    top: 10%;
+    right: 5%;
+  }
+
+  @media screen and (min-width: $breakpoint_small+1) {
+    .hero-logo-full-wrap { display: block; }
+    .hero-logo-icon-wrap { display: none; }
+  }
+  @media screen and (max-width: $breakpoint_small) {
+    .hero-logo-full-wrap { display: none; }
+    .hero-logo-icon-wrap { display: block; }
+  }
+}
+
+.hero-text {
+  top: 30%;
+}
+.hero-bg {
+  width: 100%;
+}
+
+/************************************************************************\
+                          NEWSLETTER SIGNUP
+\************************************************************************/
+.newsletter {
+  .form {
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  .input {
+    font-family: "AvenirNextLTW01-Regular","Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    -webkit-appearance: none;
+    color: #c5bba8;
+    background-color: #f0eded;
+    border: 2px solid #c5bba8;
+    vertical-align: middle;
+    height: 58px;
+    width: 95%;
+    padding-left: 5%;
+    margin: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-right-size: 1px;
+    outline: 0;
+  }
+}
+
+/************************************************************************\
+                              FLOORPLAN
+\************************************************************************/
+.workbench-floorplans {
+  position: relative;
+  z-index: 1;
+  @include clearfix();
+  li {
+    text-align: center;
+  }
+  .absolute-centered {
+    top: 4%;
+  }
+  h2 {
+    color: $white;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+.slideshow-controls {
+  z-index: 2;
+  bottom: 5%;
+  a.next {
+    // Using a sass mixin with a content block
+    @include button {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
+
+/************************************************************************\
+                                 TEAM
+\************************************************************************/
+.team-member {
+  .professional-headshot { display: block; }
+  .fun-headshot { display: none; }
+
+  &:hover {
+    .professional-headshot { display: none; }
+    .fun-headshot { display: block; }
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-top: 11px;
+  }
+  h3 {
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 0;
+  }
+
+  .team-headshot {
+    float: left;
+    width: 60px;
+    border-radius: 30px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: $breakpoint_small) {
+  .two-columns.extra-margin {
+    margin-top: 0px;
+  }
+}
+
+/************************************************************************\
+                                FOOTER
+\************************************************************************/
+.footer-bg {
+  background-image: image-url("footer-bg.jpg");
+  text-align: center;
+}
+.footer-icon {
+  width: 70px;
+}

@@ -1,0 +1,121 @@
+/************************************************************************\
+                             CORE FORM ELEMENTS
+\************************************************************************/
+
+@mixin text-input {
+  padding: .3em 1em .4em 1em;
+  border: 2px solid $medium_grey;
+  border: 2px solid rgba(0,0,0,0.5);
+  background: transparent;
+  font-family: $medium;
+  margin-top: 1em;
+
+  @include border-radius(4px);
+  @include transition(all .3s);
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @content;
+}
+
+@mixin button {
+  display: block;
+  background: transparent;
+
+  color: $medium_grey;
+  color: rgba(0,0,0,0.5);
+  font-family: $demi;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding: .3em 1em .4em 1em;
+  border: 2px solid $medium_grey;
+  border: 2px solid rgba(0,0,0,0.5);
+  width: auto;
+
+  @include border-radius(4px);
+  @include transition(all .3s);
+
+  &:hover {
+    cursor: pointer;
+    color: $white;
+    background: $medium_grey;
+    background: rgba(0,0,0,0.5);
+  }
+
+  @content; // Allows for extra content mixins blocks via sass
+}
+
+form {
+  &.form-full-width {
+    input[type='text'],
+    input[type='email'] {
+      @include box-sizing(border-box);
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding: 1.2em 1em 1.2em 2em;
+    }
+
+    button,
+    .btn,
+    .button
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      margin-top: 1em;
+      width: 100%;
+      padding: 1.2em 1em 1.2em 2em;
+    }
+  }
+  &.embedded-submit {
+    position: relative;
+
+    button,
+    .btn,
+    .button
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      font-size: 24px;
+      border: 0;
+      width: auto;
+      padding: .3em 1em .4em 1em;
+      margin-top: 0;
+      &:hover {
+        background: transparent;
+        color: $green;
+      }
+    }
+  }
+}
+
+input[type='text'],
+input[type='email'] {
+  @include text-input();
+}
+
+.btn, .button {
+  @include button();
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  @include button();
+
+  &.solid-button {
+    border: 0;
+    background-color: $Wood-4;
+  }
+}

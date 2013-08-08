@@ -1,0 +1,18 @@
+<%# This is loaded from the `yield` statement in source/layout.erb %>
+<% content_tag :div, :class => 'page-wrap' do %>
+  <%= partial 'partials/hero'        %>
+  <%= partial 'partials/hook'        %>
+  <%= partial 'partials/newsletter'  %>
+  <%= partial 'partials/openletter'  %>
+  <%= partial 'partials/pagebreak_1' %>
+  <%= partial 'partials/cooperative' %>
+  <%= partial 'partials/pagebreak_2' %>
+  <%= partial 'partials/workspace'   %>
+  <%= partial 'partials/slideshow'   %>
+  <%= partial 'partials/team'        %>
+  <%= partial 'partials/membership'  %>
+  <%= partial 'partials/footer'      %>
+  <%= partial 'partials/modal_individual_membership' %>
+  <%= partial 'partials/modal_team_membership'       %>
+  <%= partial 'partials/modal_wb_newsletter'         %>
+<% end %>

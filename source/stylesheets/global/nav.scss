@@ -1,0 +1,76 @@
+/************************************************************************\
+                              NAVIGATION
+\************************************************************************/
+nav {
+  position: relative;
+  z-index: 2;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  &.nav-primary-header {
+    @media screen and (min-width: $breakpoint_small+1) {
+      position: absolute;
+      top: 22%;
+      width: 100%;
+      color: $white;
+      text-align: center;
+
+      li {
+        margin: 0 20px;
+      }
+      .nav-primary-toggle {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: $breakpoint_small) {
+      .nav-area {
+        // Gets activated by clicking nav-primary-toggle.
+        display: none;
+      }
+
+      .nav-primary-toggle {
+        display: block;
+        position: absolute;
+        color: $white;
+        bottom: -68px;
+        font-size: 26px;
+        left: 20px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      ul {
+        width: 100%;
+      }
+      li {
+        display: block;
+        a {
+          display: block;
+          padding: 20px 20px;
+          border-bottom: 0;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          width: 100%;
+          &:active, &:hover {
+            border-bottom: 0;
+            background-color: $Wood-3;
+          }
+        }
+      }
+    }
+  }
+
+  &.nav-footer {
+    li {
+      margin: 0 10px;
+      font-size: $minor_font_size;
+    }
+  }
+}
