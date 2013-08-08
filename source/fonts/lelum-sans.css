@@ -1,0 +1,26 @@
+/*
+Font: 		Lelum Sans
+Style: 		Regular
+URL: 		http://www.youworkforthem.com/product.php?sku=T4256
+Foundry: 	Dada Studio
+Foundry: 	http://www.youworkforthem.com/designer/296/dada-studio
+Copyright:	Copyright  2012 by Dada Studio. All rights reserved.
+Version: 	1.1
+Created:	March 04, 2013
+License: 	http://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'Lelum Sans';
+	src: url('lelum-sans.eot');
+	src: url('lelum-sans.eot?#iefix') format('embedded-opentype'),
+	     url('lelum-sans.woff') format('woff'),
+	     url('lelum-sans.ttf') format('truetype'),
+	     url('lelum-sans.svg#ywftsvg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

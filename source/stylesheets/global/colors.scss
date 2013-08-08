@@ -2,14 +2,6 @@
                            WORK-BENCH COLOR SCHEME
 \************************************************************************/
 
-$black: #000;
-$white: #fff;
-$light_grey: #f5f4f2;
-$lighter_grey: #f0eded;
-$medium_grey: #e0dedc;
-$dark_grey: #4b4b4f;
-$green: #45d17f;
-
 /* Growth */
 $Growth-1: #18a656;
 $Growth-2: #19934c;
@@ -28,3 +20,13 @@ $Wood-2: #fcfcfa;
 $Wood-3: #eae8e7;
 $Wood-4: #c5c2bc;
 $Wood-5: #73726f;
+
+$white:        $Wood-1;
+$lighter_grey: $Wood-2;
+$light_grey:   $Wood-3;
+$medium_grey:  $Wood-4;
+$dark_grey:    $Wood-5;
+
+$green:        $Growth-1;
+
+$black:        $Leather-1;
