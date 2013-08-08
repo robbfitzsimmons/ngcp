@@ -54,16 +54,16 @@
 /************************************************************************\
                               GLOBAL STYLES
 \************************************************************************/
-@import "global/colors";
-@import "global/type";
-@import "global/forms";
-@import "global/structural";
-@import "global/nav";
+@import "global/_colors";
+@import "global/_type";
+@import "global/_forms";
+@import "global/_structural";
+@import "global/_nav";
 
 /************************************************************************\
                           PAGE-SPECIFIC STYLES
 \************************************************************************/
-@import "pages/landing"
+@import "pages/_landing"
 
 // DO NOT INCLUDE ANY STYLES HERE!
 // Break them up into sensible files and `@import` them above.

@@ -88,22 +88,55 @@ $compact_line_height : 1.35;
 h1, h2, h3, h4, h5, h6 {
   font-family: $header_font_family;
   font-weight: normal;
+  line-height: $compact_line_height;
 }
 
 h1 {
-  font-size: 120px;
   font-family: $heavy;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 
   margin: 22px 0 0 0;
-  line-height: $compact_line_height;
 
   &.hero {
     font-family: $heavy;
     color: $white;
     text-transform: uppercase;
-    letter-spacing: 4px;
   }
 }
+
+
+h2 {
+  font-family: $medium;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h3 {
+  font-family: $light;
+  font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+h4 {
+  font-family: $medium;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 h2 {
   font-size: 30px;
