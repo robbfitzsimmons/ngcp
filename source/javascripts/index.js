@@ -75,7 +75,7 @@ jQuery(function($){
     after: function(){}     // Function: After callback
   });
 
-  $(".nav-primary-toggle").click(function(){
+  $(".nav-primary-toggle").on("mousedown", function(){
     $(".nav-area").slideToggle('fast');
   });
 });

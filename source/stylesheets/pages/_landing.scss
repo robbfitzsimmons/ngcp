@@ -20,7 +20,7 @@
     top: 10%;
   }
   .hero-logo-icon-wrap {
-    top: 10%;
+    top: 6%;
     right: 5%;
   }
 
@@ -35,7 +35,7 @@
 }
 
 .hero-text {
-  top: 30%;
+  top: 37%;
 }
 .hero-bg {
   width: 100%;
@@ -122,22 +122,32 @@
     .fun-headshot { display: block; }
   }
 
+  .person-info {
+    padding-left: 70px;
+  }
+
   h3 {
     font-size: 22px;
     line-height: 22px;
-    margin-top: 11px;
+    margin-top: -4px;
   }
   h4 {
     font-size: 12px;
-    line-height: 24px;
-    margin-top: 0;
+    line-height: 12px;
+    margin-top: 9px;
   }
 
   .team-headshot {
     float: left;
     width: 60px;
     border-radius: 30px;
-    margin-right: 10px;
+  }
+
+  .team-social-links {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 9px;
+    letter-spacing: 3px;
   }
 }
 

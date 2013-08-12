@@ -29,6 +29,15 @@ html {
   font-size:   $base-font-size;
   line-height: $base-line-height;
   font-family: $base-font-family;
+
+  @media screen and (max-width: $breakpoint_small) {
+    font-size:   $reduced-font-size;
+    line-height: $reduced-line-height;
+  }
+}
+
+*:first-child {
+  margin-top: 0;
 }
 
 body { }
@@ -101,7 +110,7 @@ hr {
 
 .core-content {
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 50px 0 60px 0; // Top has less padding b/c of type line-heights
   width: 46%;
 
   &.double-padded {
@@ -113,6 +122,15 @@ hr {
   }
   @media screen and (max-width: $breakpoint_small) {
     width: 86%;
+    padding: 30px 0 40px 0; // Top has less padding b/c of type line-heights
+
+    &.double-padded {
+      padding: 60px 0 80px 0; // Less at top to account for headers' line height
+    }
+
+    &.double-padded-reduced {
+      padding: 0px 0 80px 0; // Less at top to account for headers' line height
+    }
   }
 }
 
@@ -185,8 +203,8 @@ hr {
     // background: image-url('collapse.png') no-repeat 0 0;
   }
 
-  h3 {
-    margin: 1em 0 1em 0;
+  h4 {
+    margin: .2em 0 1em 0;
   }
 }
 

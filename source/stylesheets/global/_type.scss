@@ -130,9 +130,12 @@ $ss-social    : "SSSocial Regular"     sans-serif;
 $ss-circle    : "SSSocial Circle",     sans-serif;
 $ss-standard  : "SSStandard",          sans-serif;
 
-$base-font-size      : 16px;
 $base-font-family    : $font-book;
+$base-font-size      : 16px;
 $base-line-height    : 2;
+
+$reduced-font-size      : 15px;
+$reduced-line-height    : 1.8;
 
 $minor-font-size     : 13px;
 $compact-line-height : 1.35;
@@ -185,6 +188,20 @@ h4 {
 h5 { }
 h6 { }
 
+b, strong {
+  font-family: $font-bold;
+  em {
+    font-family: $font-bold-italic;
+  }
+}
+
+em {
+  font-family: $font-book-italic;
+  b, strong {
+    font-family: $font-bold-italic;
+  }
+}
+
 p {
   text-align: justify;
   margin-top: 1.5em;
@@ -205,14 +222,15 @@ p {
     font-size: $minor-font-size;
   }
 }
+
 q {
   display: block;
   font-size: 2 * $base-font-size;
+  font-family: $font-book-italic;
   line-height: $compact-line-height;
   text-align: justify;
-  margin: 36px 0;
+  margin: 26px 0 36px 0; // Top has less margin b/c of type line-heights
   color: $green;
-  font-style: italic;
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
@@ -234,10 +252,6 @@ a {
       border-bottom: 0;
     }
   }
-}
-
-b, strong {
-  font-family: $font-bold;
 }
 
 code, kbd, pre, samp {
