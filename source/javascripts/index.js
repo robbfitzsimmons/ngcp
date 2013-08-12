@@ -78,4 +78,7 @@ jQuery(function($){
   $(".nav-primary-toggle").on("mousedown", function(){
     $(".nav-area").slideToggle('fast');
   });
+  $(".nav-primary-toggle").on("touchstart", function(){
+    $(".nav-area").slideToggle('fast');
+  });
 });
