@@ -3,7 +3,6 @@
 \************************************************************************/
 
 // Avenir
-
 @font-face {
   font-family: "Avenir Next Regular";
   src: font-url('avenir-next-regular.eot');
@@ -48,115 +47,141 @@
   font-style: normal;
 }
 
+
+// Lelum Sans
 @font-face {
-  font-family: "Lelum Sans";
-  src: font-url('lelum-sans.eot');
-  src: font-url('lelum-sans.eot?#iefix') format('embedded-opentype'),
-       font-url('lelum-sans.woff') format('woff'),
-       font-url('lelum-sans.ttf') format('truetype'),
-       font-url('lelum-sans.svg#LelumSans') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Lelum Sans Bold";
+    src: font-url('lelum-sans-bold.eot');
+    src: font-url('lelum-sans-bold.eot?#iefix') format('embedded-opentype'),
+         font-url('lelum-sans-bold.woff') format('woff'),
+         font-url('lelum-sans-bold.ttf') format('truetype'),
+         font-url('lelum-sans-bold.svg#LelumSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: "Lelum Sans Bold Italic";
+    src: font-url('lelum-sans-bold-italic.eot');
+    src: font-url('lelum-sans-bold-italic.eot?#iefix') format('embedded-opentype'),
+         font-url('lelum-sans-bold-italic.woff') format('woff'),
+         font-url('lelum-sans-bold-italic.ttf') format('truetype'),
+         font-url('lelum-sans-bold-italic.svg#LelumSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lelum Sans Book";
+    src: font-url('lelum-sans-book.eot');
+    src: font-url('lelum-sans-book.eot?#iefix') format('embedded-opentype'),
+         font-url('lelum-sans-book.woff') format('woff'),
+         font-url('lelum-sans-book.ttf') format('truetype'),
+         font-url('lelum-sans-book.svg#LelumSansBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lelum Sans Book Italic";
+    src: font-url('lelum-sans-book-italic.eot');
+    src: font-url('lelum-sans-book-italic.eot?#iefix') format('embedded-opentype'),
+         font-url('lelum-sans-book-italic.woff') format('woff'),
+         font-url('lelum-sans-book-italic.ttf') format('truetype'),
+         font-url('lelum-sans-book-italic.svg#LelumSansBookItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lelum Sans Light";
+    src: font-url('lelum-sans-light.eot');
+    src: font-url('lelum-sans-light.eot?#iefix') format('embedded-opentype'),
+         font-url('lelum-sans-light.woff') format('woff'),
+         font-url('lelum-sans-light.ttf') format('truetype'),
+         font-url('lelum-sans-light.svg#LelumSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lelum Sans Light Italic";
+    src: font-url('lelum-sans-light-italic.eot');
+    src: font-url('lelum-sans-light-italic.eot?#iefix') format('embedded-opentype'),
+         font-url('lelum-sans-light-italic.woff') format('woff'),
+         font-url('lelum-sans-light-italic.ttf') format('truetype'),
+         font-url('lelum-sans-light-italic.svg#LelumSansLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // Type Variables
-
-$heavy  : "Avenir Next Heavy";
-$medium : "Avenir Next Medium";
-$light  : "Lelum Sans";
-$book   : "Lelum Sans";
-
-$regular      : "Avenir Next Regular", sans-serif;
-$medium       : "Avenir Next Medium",  sans-serif;
-$demi         : "Avenir Next Demi",    sans-serif;
-$heavy        : "Avenir Next Heavy",   sans-serif;
+$font-heavy        : "Avenir Next Heavy",       sans-serif;
+$font-bold         : "Lelum Sans Book",         sans-serif;
+$font-bold-italic  : "Lelum Sans Book Italic",  sans-serif;
+$font-demi         : "Avenir Next Demi",        sans-serif;
+$font-medium       : "Avenir Next Medium",      sans-serif;
+$font-book         : "Lelum Sans Book",         sans-serif;
+$font-book-italic  : "Lelum Sans Book Italic",  sans-serif;
+$font-light        : "Lelum Sans Light",        sans-serif;
+$font-light-italic : "Lelum Sans Light Italic", sans-serif;
 
 $ss-social    : "SSSocial Regular"     sans-serif;
 $ss-circle    : "SSSocial Circle",     sans-serif;
 $ss-standard  : "SSStandard",          sans-serif;
 
-$header_font_family : $demi;
+$base-font-size      : 16px;
+$base-font-family    : $font-book;
+$base-line-height    : 2;
 
-$base_font_size      : 18px;
-$base_font_family    : $book;
-$base_line_height    : 2;
+$minor-font-size     : 13px;
+$compact-line-height : 1.35;
 
-$minor_font_size     : 13px;
-$compact_line_height : 1.35;
 
+// Headers
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header_font_family;
   font-weight: normal;
-  line-height: $compact_line_height;
+  line-height: $compact-line-height;
+  margin: .5em 0 0 0;
 }
 
 h1 {
-  font-family: $heavy;
   font-size: 60px;
-  text-transform: uppercase;
+  font-family: $font-heavy;
   letter-spacing: 4px;
-
-  margin: 22px 0 0 0;
+  text-transform: uppercase;
 
   &.hero {
-    font-family: $heavy;
     color: $white;
-    text-transform: uppercase;
   }
 }
 
-
 h2 {
-  font-family: $medium;
   font-size: 30px;
+  font-family: $font-medium;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  letter-spacing: 4px;
 }
 
 h3 {
-  font-family: $light;
   font-size: 30px;
-  text-transform: capitalize;
+  font-family: $font-light;
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
+
 h4 {
-  font-family: $medium;
   font-size: 15px;
-  text-transform: uppercase;
+  font-family: $font-medium;
   letter-spacing: 1px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-h2 {
-  font-size: 30px;
-  font-family: $medium;
-  text-transform: capitalize;
-}
-
-h3 {
-  margin-top: 2em;
-  font-size: 12px;
-  letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: $demi;
 
+  margin-top: 2em;
   &.double-margin {
     margin-top: 4em;
   }
 }
 
-h4 { }
 h5 { }
 h6 { }
 
@@ -177,13 +202,13 @@ p {
     text-align: center;
   }
   &.minor {
-    font-size: $minor_font_size;
+    font-size: $minor-font-size;
   }
 }
 q {
   display: block;
-  font-size: 2 * $base_font_size;
-  line-height: $compact_line_height;
+  font-size: 2 * $base-font-size;
+  line-height: $compact-line-height;
   text-align: justify;
   margin: 36px 0;
   color: $green;
@@ -212,12 +237,12 @@ a {
 }
 
 b, strong {
-  font-family: $demi;
+  font-family: $font-bold;
 }
 
 code, kbd, pre, samp {
   font-family: monospace,serif;
-  font-size: $base_font_size;
+  font-size: $base-font-size;
 }
 pre {
   white-space: pre-wrap;
