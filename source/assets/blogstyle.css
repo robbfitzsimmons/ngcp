@@ -190,23 +190,58 @@ video {
 @import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=9fc8c9ab-8a91-4e06-bd34-77c97757883f");
 
 @font-face {
-  font-family:"AvenirNextLTW01-Regular";src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("Fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("Fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("Fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+    font-family: "Lelum Sans";
+    src: url('http://www.work-bench.com/fonts/lelum-sans-book.eot');
+    src: url('http://www.work-bench.com/fonts/lelum-sans-book.eot?#iefix') format('embedded-opentype'),
+         url('http://www.work-bench.com/fonts/lelum-sans-book.woff') format('woff'),
+         url('http://www.work-bench.com/fonts/lelum-sans-book.ttf') format('truetype'),
+         url('http://www.work-bench.com/fonts/lelum-sans-book.svg#LelumSansBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+// Avenir
+@font-face {
+  font-family: "AvenirNextLTW01-Regular";
+  src: url('http://www.work-bench.com/fonts/avenir-next-regular.eot');
+  src: url('http://www.work-bench.com/fonts/avenir-next-regular.eot?#iefix') format('embedded-opentype'),
+       url('http://www.work-bench.com/fonts/avenir-next-regular.woff') format('woff'),
+       url('http://www.work-bench.com/fonts/avenir-next-regular.ttf') format('truetype'),
+       url('http://www.work-bench.com/fonts/avenir-next-regular.svg#AvenirNextRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family:"Avenir Next W10 Medium";src:url("Fonts/2bf26c0b-2c2a-4d68-8f6b-447ecd526105.eot?#iefix");src:url("Fonts/2bf26c0b-2c2a-4d68-8f6b-447ecd526105.eot?#iefix") format("eot"),url("Fonts/95aa7ca1-de33-40d9-ae40-ff045fcada66.woff") format("woff"),url("Fonts/915534d0-f381-4fa3-9ff3-c56e5c6cfd08.ttf") format("truetype"),url("Fonts/a252017e-236d-4161-895a-5f6b851154e4.svg#a252017e-236d-4161-895a-5f6b851154e4") format("svg");
+  font-family: "Avenir Next W10 Medium";
+  src: url('http://www.work-bench.com/fonts/avenir-next-medium.eot');
+  src: url('http://www.work-bench.com/fonts/avenir-next-medium.eot?#iefix') format('embedded-opentype'),
+       url('http://www.work-bench.com/fonts/avenir-next-medium.woff') format('woff'),
+       url('http://www.work-bench.com/fonts/avenir-next-medium.ttf') format('truetype'),
+       url('http://www.work-bench.com/fonts/avenir-next-medium.svg#AvenirNextMedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family:"Avenir Next W10 Demi";src:url("Fonts/a47247cc-4e49-4a7a-90df-e89cd3887fbf.eot?#iefix");src:url("Fonts/a47247cc-4e49-4a7a-90df-e89cd3887fbf.eot?#iefix") format("eot"),url("Fonts/8e0e32b3-034a-41e8-bd15-c22974ebcdb5.woff") format("woff"),url("Fonts/e67c8a0b-c32f-4b4b-b883-956fb420313e.ttf") format("truetype"),url("Fonts/5e006032-8b7f-4fa8-88e3-1fe5ba1cc726.svg#5e006032-8b7f-4fa8-88e3-1fe5ba1cc726") format("svg");
+  font-family: "Avenir Next W10 Demi";
+  src: url('http://www.work-bench.com/fonts/avenir-next-demi.eot');
+  src: url('http://www.work-bench.com/fonts/avenir-next-demi.eot?#iefix') format('embedded-opentype'),
+       url('http://www.work-bench.com/fonts/avenir-next-demi.woff') format('woff'),
+       url('http://www.work-bench.com/fonts/avenir-next-demi.ttf') format('truetype'),
+       url('http://www.work-bench.com/fonts/avenir-next-demi.svg#AvenirNextDemi') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family:"Avenir Next W10 Heavy";src:url("Fonts/d3f31394-e7cf-4553-b582-fcec4d7e84db.eot?#iefix");src:url("Fonts/d3f31394-e7cf-4553-b582-fcec4d7e84db.eot?#iefix") format("eot"),url("Fonts/ac97f5d6-a420-481a-955e-77653618b656.woff") format("woff"),url("Fonts/5fc4aac2-c1c5-4bac-b182-b03ea3965419.ttf") format("truetype"),url("Fonts/6dd157a3-38fb-4b2e-9988-bbe7b2da47f8.svg#6dd157a3-38fb-4b2e-9988-bbe7b2da47f8") format("svg");
-}
-
-@font-face {
-  font-family:'Lelum Sans';src:url('Fonts/lelum-sans.eot');src:url('Fonts/lelum-sans.eot?#iefix') format('embedded-opentype'),url('Fonts/lelum-sans.woff') format('woff'),url('Fonts/lelum-sans.ttf') format('truetype'),url('Fonts/lelum-sans.svg#ywftsvg') format('svg');font-weight:normal;font-style:normal;
+  font-family: "Avenir Next W10 Heavy";
+  src: url('http://www.work-bench.com/fonts/avenir-next-heavy.eot');
+  src: url('http://www.work-bench.com/fonts/avenir-next-heavy.eot?#iefix') format('embedded-opentype'),
+       url('http://www.work-bench.com/fonts/avenir-next-heavy.woff') format('woff'),
+       url('http://www.work-bench.com/fonts/avenir-next-heavy.ttf') format('truetype'),
+       url('http://www.work-bench.com/fonts/avenir-next-heavy.svg#AvenirNextHeavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
