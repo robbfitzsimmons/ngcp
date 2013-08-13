@@ -117,8 +117,8 @@
 
 // Type Variables
 $font-heavy        : "Avenir Next Heavy",       sans-serif;
-$font-bold         : "Lelum Sans Book",         sans-serif;
-$font-bold-italic  : "Lelum Sans Book Italic",  sans-serif;
+$font-bold         : "Lelum Sans Bold",         sans-serif;
+$font-bold-italic  : "Lelum Sans Bold Italic",  sans-serif;
 $font-demi         : "Avenir Next Demi",        sans-serif;
 $font-medium       : "Avenir Next Medium",      sans-serif;
 $font-book         : "Lelum Sans Book",         sans-serif;
@@ -175,8 +175,8 @@ h3 {
 }
 
 h4 {
-  font-size: 15px;
-  font-family: $font-medium;
+  font-size: 13px;
+  font-family: $font-bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 
@@ -239,7 +239,7 @@ a {
   color: inherit;
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 2px solid $dark_grey;
+  border-bottom: 2px solid $white;
   @include transition(all .3s);
 
   &:active, &:hover {
@@ -295,6 +295,10 @@ sub {
   font-family: $ss-standard;
 }
 
+.ss-icon, .ss-book, .ss-user {
+  font-size: 90%;
+}
 .ss-social {
+  font-size: 90%;
   font-family: $ss-social;
 }
