@@ -280,7 +280,7 @@ body {
   background: #ecf0f1;
   font-family: 'lelum Sans',Candara,Calibri,Segoe,"Segoe UI",Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 2;
   font-weight: 400;
   color: #34495e;
 }
@@ -771,7 +771,7 @@ article.type_audio .soundcloud_audio_player {
   width: 100%;
 }
 article a {
-  font-weight: 600;
+  font-weight: 400;
 }
 article h2 a {
   font-weight: 300;
@@ -1058,8 +1058,8 @@ article.nostretch .article-content img {
 @media screen and (min-width: 768px) {
   body {
 	border: 10px solid #ededed;
-	font-size: 17px;
-	line-height: 25px;
+	font-size: 16px;
+	line-height: 2;
   }
   footer {
 	margin-top: 60px;
