@@ -1092,6 +1092,9 @@ article.nostretch .article-content img {
 	margin: 0 auto;
 	padding: 40px 0 20px;
   }
+  header .logo img {
+    max-width: 45%;
+  }
   header .description {
 	margin-top: 66px;
 	padding: 0 20%;
