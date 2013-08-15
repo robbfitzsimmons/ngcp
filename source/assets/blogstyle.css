@@ -384,7 +384,7 @@ header .logo {
 }
 header .logo img {
   display: inline;
-  max-width: 320px;
+  max-width: 45%;
 }
 header .avatar {
   display: inline-block;
@@ -1093,7 +1093,7 @@ article.nostretch .article-content img {
 	padding: 40px 0 20px;
   }
   header .logo img {
-    max-width: 45%;
+    max-width: 320px;
   }
   header .description {
 	margin-top: 66px;
