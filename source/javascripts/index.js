@@ -34,7 +34,6 @@
 //= require "lib/fitText"
 //= require "lib/scrolling"
 //= require "lib/responsiveSlides"
-//= require "lib/browserDetection"
 //= require "lib/googleAnalytics"
 //= require "lib/goSquared"
 /////////// The following are polyfills for < IE8
@@ -75,10 +74,18 @@ jQuery(function($){
     after: function(){}     // Function: After callback
   });
 
-  $(".nav-primary-toggle").on("mousedown", function(){
+  $(".nav-primary-toggle").tclick(function(){
     $(".nav-area").slideToggle('fast');
   });
-  $(".nav-primary-toggle").on("touchstart", function(){
-    $(".nav-area").slideToggle('fast');
-  });
+  // $(".nav-primary-toggle").on("touchstart", function(){
+  //   $(".nav-area").slideToggle('fast');
+  // });
 });
+//touch click helper
+(function ($) {
+  $.fn.tclick = function (onclick) {
+    this.bind("touchstart", function (e) { onclick.call(this, e); e.stopPropagation(); e.preventDefault(); });
+    this.bind("click", function (e) { onclick.call(this, e); });   //substitute mousedown event for exact same result as touchstart         
+    return this;
+  };
+})(jQuery);

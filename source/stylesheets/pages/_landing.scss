@@ -21,7 +21,7 @@
   }
   .hero-logo-icon-wrap {
     top: 6%;
-    right: 5%;
+    left: 5%;
   }
 
   @media screen and (min-width: $breakpoint_small+1) {
@@ -36,42 +36,12 @@
 
 .hero-text {
   top: 37%;
+  @media screen and (max-width: $breakpoint_small) {
+    top: 43%;
+  }
 }
 .hero-bg {
   width: 100%;
-}
-
-/************************************************************************\
-                          NEWSLETTER SIGNUP
-\************************************************************************/
-.newsletter {
-  .form {
-    width: 60%;
-    position: relative;
-    margin: 0 auto;
-    padding: 40px 0;
-  }
-  .input {
-    font-family: "AvenirNextLTW01-Regular","Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,"AppleGothic",sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    display: inline-block;
-    -webkit-appearance: none;
-    color: #c5bba8;
-    background-color: #f0eded;
-    border: 2px solid #c5bba8;
-    vertical-align: middle;
-    height: 58px;
-    width: 95%;
-    padding-left: 5%;
-    margin: 0;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-right-size: 1px;
-    outline: 0;
-  }
 }
 
 /************************************************************************\

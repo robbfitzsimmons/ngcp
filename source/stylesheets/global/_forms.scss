@@ -60,6 +60,10 @@ form {
       font-size: 16px;
       letter-spacing: 1px;
       padding: 1.2em 1em 1.2em 2em;
+      @media screen and (max-width: $breakpoint_small) {
+        font-size: 14px;
+        padding: 1.2em 1em 1.2em 1em;
+      }
     }
 
     button,
@@ -72,6 +76,7 @@ form {
       width: 100%;
       padding: 1.2em 1em 1.2em 2em;
     }
+
   }
   &.embedded-submit {
     position: relative;
@@ -93,6 +98,10 @@ form {
       &:hover {
         background: transparent;
         color: $green;
+      }
+
+      @media screen and (max-width: $breakpoint_small) {
+        top: 6px;
       }
     }
   }
