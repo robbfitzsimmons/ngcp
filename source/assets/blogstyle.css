@@ -280,7 +280,7 @@ body {
   background: #ecf0f1;
   font-family: 'lelum Sans',Candara,Calibri,Segoe,"Segoe UI",Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 2;
   font-weight: 400;
   color: #34495e;
 }
@@ -330,12 +330,12 @@ h4{
   padding-bottom: .5em;
 }
 h5 {
-  font-size: 10px;
+  font-size: 11px;
   line-height: 16px;
   font-family: 'Avenir Next W10 Medium';
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 400;
   width: 100%;
   text-align: center;
   padding-bottom: 3em;
@@ -345,6 +345,17 @@ h5 {
   letter-spacing: 1px;
   line-height: 1;
 */
+}
+h6 {
+  font-size: 10px;
+  line-height: 1;
+  font-family: 'Avenir Next W10 Demi';
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 0;
 }
 a {
   text-decoration: none;
@@ -359,6 +370,7 @@ a:hover {
 }
 p {
   margin-top: 18px;
+  padding-bottom: 1em;
 }
 header {
   position: relative;
@@ -372,7 +384,7 @@ header .logo {
 }
 header .logo img {
   display: inline;
-  max-width: 320px;
+  max-width: 45%;
 }
 header .avatar {
   display: inline-block;
@@ -771,7 +783,8 @@ article.type_audio .soundcloud_audio_player {
   width: 100%;
 }
 article a {
-  font-weight: 600;
+  font-weight: 400;
+  border-bottom: 2px solid;
 }
 article h2 a {
   font-weight: 300;
@@ -1058,8 +1071,8 @@ article.nostretch .article-content img {
 @media screen and (min-width: 768px) {
   body {
 	border: 10px solid #ededed;
-	font-size: 17px;
-	line-height: 25px;
+	font-size: 16px;
+	line-height: 2;
   }
   footer {
 	margin-top: 60px;
@@ -1074,10 +1087,13 @@ article.nostretch .article-content img {
   }
   header {
 	position: relative;
-	width: 80%;
+	width: 70%;
 	max-width: 1080px;
 	margin: 0 auto;
 	padding: 40px 0 20px;
+  }
+  header .logo img {
+    max-width: 320px;
   }
   header .description {
 	margin-top: 66px;
@@ -1113,15 +1129,19 @@ article.nostretch .article-content img {
   h5 {
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0px;
+    letter-spacing: 2px;
     padding-bottom: 3em;
+  }
+  h6 {
+    font-size: 13px;
+    letter-spacing: 2px;
   }
   section {
 	padding: 0 30px;
   }
   article {
 	position: relative;
-	width: 80%;
+	width: 70%;
 	max-width: 1080px;
 	margin: 0px auto 80px;
 	padding: 0px 80px 70px;
