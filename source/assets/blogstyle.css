@@ -309,6 +309,10 @@ h2 {
   padding-bottom: .1em;
   color: #000000;
   text-decoration: none;
+  -webkit-transition: all 0.14s ease-in-out;
+  -moz-transition: all 0.14s ease-in-out;
+  -o-transition: all 0.14s ease-in-out;
+  transition: all 0.14s ease-in-out;
 }
 h2:hover {
   color: #45d17f;
