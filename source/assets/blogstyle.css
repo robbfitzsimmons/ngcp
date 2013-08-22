@@ -307,6 +307,8 @@ h2 {
   width: 100%;
   text-align: center;
   padding-bottom: .1em;
+  color: #000000;
+  text-decoration: none;
 }
 h3 {
   font-size: 18px;
