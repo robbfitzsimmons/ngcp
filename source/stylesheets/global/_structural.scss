@@ -4,7 +4,9 @@
 
 $breakpoint_max: 1602px;
 $breakpoint_large: 1402px;
-$breakpoint_medium: 1040px;
+$breakpoint_large_two_column: 1370px;
+$breakpoint_medium: 1050px;
+$breakpoint_medium_two_column: 830px;
 $breakpoint_small: 602px;
 
 .hide-when-small {
@@ -122,6 +124,21 @@ hr {
     padding: 100px 0 120px 0; // Less at top to account for headers' line height
   }
 
+  &.two-column-holder {
+    @media screen and (max-width: $breakpoint_large_two_column) {
+      width: 60%;
+    }
+    @media screen and (max-width: $breakpoint_medium) {
+      width: 76%;
+    }
+    @media screen and (max-width: $breakpoint_medium_two_column) {
+      width: 56%;
+    }
+    @media screen and (max-width: $breakpoint_small) {
+      width: 86%;
+    }
+  }
+
   @media screen and (max-width: $breakpoint_medium) {
     width: 76%;
   }
@@ -154,7 +171,7 @@ hr {
   .column-left {
     float: left;
     width: 45%;
-    @media screen and (max-width: $breakpoint_small) {
+    @media screen and (max-width: $breakpoint_medium_two_column) {
       float: none;
       width: 100%;
       margin-top: 40px;
@@ -163,7 +180,7 @@ hr {
   .column-right {
     float: right;
     width: 45%;
-    @media screen and (max-width: $breakpoint_small) {
+    @media screen and (max-width: $breakpoint_medium_two_column) {
       float: none;
       width: 100%;
       margin-top: 40px;

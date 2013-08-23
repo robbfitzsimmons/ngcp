@@ -93,6 +93,9 @@
   }
 
   .person-info {
+    @include clearfix;
+  }
+  .person-info-headers {
     padding-left: 70px;
   }
 
@@ -102,9 +105,11 @@
     margin-top: -4px;
   }
   h4 {
+    float: left;
     font-size: 12px;
     line-height: 12px;
     margin-top: 9px;
+    margin-right: 6px;
   }
 
   .team-headshot {
@@ -114,6 +119,7 @@
   }
 
   .team-social-links {
+    float: left;
     font-size: 12px;
     line-height: 12px;
     margin-top: 9px;
