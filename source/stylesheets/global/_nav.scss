@@ -42,12 +42,22 @@ nav {
       .nav-primary-toggle {
         display: block;
         position: absolute;
-        color: $white;
+        font-family: $font-demi;
         bottom: -50px;
-        font-size: 26px;
-        right: 20px;
+        font-size: 17px;
+        letter-spacing: 2px;
+        right: 25px;
+
+        color: $medium_grey;
+
         &:hover {
           cursor: pointer;
+          color: $white;
+        }
+
+        .ss-rows {
+          margin-left: 8px;
+          font-size: 13px;
         }
       }
       ul {
