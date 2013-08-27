@@ -34,6 +34,21 @@
   }
 }
 
+.hero-footer {
+  color: $white;
+  bottom: 10%;
+
+  @media screen and (max-width: $breakpoint_small) {
+    &.absolute-centered {
+      position: relative;
+      color: $black;
+      width: 86%;
+      margin: 0px auto;
+      padding: 20px 0 0 0;
+    }
+  }
+}
+
 .hero-text {
   top: 37%;
   @media screen and (max-width: $breakpoint_small) {
