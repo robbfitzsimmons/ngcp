@@ -2,32 +2,29 @@
                            WORK-BENCH COLOR SCHEME
 \************************************************************************/
 
-/* Growth */
-$Growth-0: #45d17f;
-$Growth-1: #18a656;
-$Growth-2: #19934c;
-$Growth-3: #084b25;
+/* Brand */
+$Brand-0: #C1D72F;
+$Brand-1: #496868;
+$Brand-2: #23a08c;
+$Brand-3: #E86D1F;
 
-/* Leather */
-$Leather-1: #060606;
-$Leather-2: #332f29;
-$Leather-3: #524d46;
-$Leather-4: #7a7771;
-$Leather-5: #a29d96;
+/* Grays */
+$Gray-1: #ffffff;
+$Gray-2: #fcfcfa;
+$Gray-3: #eae8e7;
+$Gray-4: #c5c2bc;
+$Gray-5: #73726f;
+$Gray-6: #060606;
 
-/* Wood */
-$Wood-1: #ffffff;
-$Wood-2: #fcfcfa;
-$Wood-3: #eae8e7;
-$Wood-4: #c5c2bc;
-$Wood-5: #73726f;
+$white:        $Gray-1;
+$lighter_grey: $Gray-2;
+$light_grey:   $Gray-3;
+$medium_grey:  $Gray-4;
+$dark_grey:    $Gray-5;
 
-$white:        $Wood-1;
-$lighter_grey: $Wood-2;
-$light_grey:   $Wood-3;
-$medium_grey:  $Wood-4;
-$dark_grey:    $Wood-5;
+$black:        $Gray-6;
 
-$green:        $Growth-1;
-
-$black:        $Leather-1;
+$green:         $Brand-0;
+$blue:        $Brand-1;
+$teal:         $Brand-2;
+$orange:       $Brand-3;

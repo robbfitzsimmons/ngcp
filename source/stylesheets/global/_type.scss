@@ -59,6 +59,7 @@ $compact-line-height : 1.35;
 
 // Headers
 h1, h2, h3, h4, h5, h6 {
+  color: $blue;
   font-weight: normal;
   line-height: $compact-line-height;
   margin: .5em 0 0 0;
@@ -143,11 +144,11 @@ p {
 q {
   @include book-italic;
   display: block;
-  font-size: 1.25 * $base-font-size;
+  font-size: 1.4 * $base-font-size;
   line-height: $compact-line-height;
   text-align: left;
   margin: 26px 0 36px 0; // Top has less margin b/c of type line-heights
-  color: $green;
+  color: $blue;
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
@@ -159,8 +160,8 @@ a {
   @include transition(all .3s);
 
   &:active, &:hover {
-    color: $Growth-0;
-    border-bottom: 2px solid $Growth-0;
+    color: $Brand-0;
+    border-bottom: 2px solid $Brand-0;
   }
 
   &.discrete {
@@ -179,7 +180,7 @@ pre {
   white-space: pre-wrap;
 }
 ::selection, ::-moz-selection {
-  background: #bff7d7;
+  background: $green;
 }
 
 small {

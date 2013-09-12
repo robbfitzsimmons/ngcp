@@ -23,7 +23,7 @@ nav {
 
       li {
         margin: 0 20px;
-        font-size: 13px;
+        font-size: 16px;
         font-family: $p22;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -73,7 +73,7 @@ nav {
           letter-spacing: 2px;
           &:active, &:hover {
             border-bottom: 0;
-            background-color: $Wood-3;
+            background-color: $Gray-3;
           }
         }
       }

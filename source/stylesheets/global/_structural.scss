@@ -53,6 +53,9 @@ section {
   &.dark {
     background: $black;
     color: $light_grey;
+    & h2 {
+      color: $green;
+    }
   }
 
   &.off-white {
