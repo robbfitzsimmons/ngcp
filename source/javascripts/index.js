@@ -25,7 +25,6 @@
 //= require "lib/scrolling"
 //= require "lib/responsiveSlides"
 //= require "lib/googleAnalytics"
-//= require "lib/goSquared"
 /////////// The following are polyfills for < IE8
 //= require "lib/console-shim"
 //= require "lib/es5-shim.2.0.5"
