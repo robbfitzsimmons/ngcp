@@ -25,7 +25,6 @@
 
   color: $medium_grey;
   color: rgba(0,0,0,0.5);
-  font-family: $font-bold;
   font-size: 13px;
   letter-spacing: 2px;
   text-align: center;
@@ -37,6 +36,7 @@
   border: 2px solid rgba(0,0,0,0.5);
   width: auto;
 
+  @include bold;
   @include border-radius(4px);
   @include transition(all .3s);
 

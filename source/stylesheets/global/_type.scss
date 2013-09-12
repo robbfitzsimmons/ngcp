@@ -2,135 +2,15 @@
                                 TYPOGRAPHY
 \************************************************************************/
 
-// Avenir
-@font-face {
-  font-family: "Avenir Next Regular";
-  src: font-url('avenir-next-regular.eot');
-  src: font-url('avenir-next-regular.eot?#iefix') format('embedded-opentype'),
-       font-url('avenir-next-regular.woff') format('woff'),
-       font-url('avenir-next-regular.ttf') format('truetype'),
-       font-url('avenir-next-regular.svg#AvenirNextRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Avenir Next Medium";
-  src: font-url('avenir-next-medium.eot');
-  src: font-url('avenir-next-medium.eot?#iefix') format('embedded-opentype'),
-       font-url('avenir-next-medium.woff') format('woff'),
-       font-url('avenir-next-medium.ttf') format('truetype'),
-       font-url('avenir-next-medium.svg#AvenirNextMedium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Avenir Next Demi";
-  src: font-url('avenir-next-demi.eot');
-  src: font-url('avenir-next-demi.eot?#iefix') format('embedded-opentype'),
-       font-url('avenir-next-demi.woff') format('woff'),
-       font-url('avenir-next-demi.ttf') format('truetype'),
-       font-url('avenir-next-demi.svg#AvenirNextDemi') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Avenir Next Heavy";
-  src: font-url('avenir-next-heavy.eot');
-  src: font-url('avenir-next-heavy.eot?#iefix') format('embedded-opentype'),
-       font-url('avenir-next-heavy.woff') format('woff'),
-       font-url('avenir-next-heavy.ttf') format('truetype'),
-       font-url('avenir-next-heavy.svg#AvenirNextHeavy') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-// Lelum Sans
-@font-face {
-    font-family: "Lelum Sans Bold";
-    src: font-url('lelum-sans-bold.eot');
-    src: font-url('lelum-sans-bold.eot?#iefix') format('embedded-opentype'),
-         font-url('lelum-sans-bold.woff') format('woff'),
-         font-url('lelum-sans-bold.ttf') format('truetype'),
-         font-url('lelum-sans-bold.svg#LelumSansBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lelum Sans Bold Italic";
-    src: font-url('lelum-sans-bold-italic.eot');
-    src: font-url('lelum-sans-bold-italic.eot?#iefix') format('embedded-opentype'),
-         font-url('lelum-sans-bold-italic.woff') format('woff'),
-         font-url('lelum-sans-bold-italic.ttf') format('truetype'),
-         font-url('lelum-sans-bold-italic.svg#LelumSansBoldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lelum Sans Book";
-    src: font-url('lelum-sans-book.eot');
-    src: font-url('lelum-sans-book.eot?#iefix') format('embedded-opentype'),
-         font-url('lelum-sans-book.woff') format('woff'),
-         font-url('lelum-sans-book.ttf') format('truetype'),
-         font-url('lelum-sans-book.svg#LelumSansBook') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lelum Sans Book Italic";
-    src: font-url('lelum-sans-book-italic.eot');
-    src: font-url('lelum-sans-book-italic.eot?#iefix') format('embedded-opentype'),
-         font-url('lelum-sans-book-italic.woff') format('woff'),
-         font-url('lelum-sans-book-italic.ttf') format('truetype'),
-         font-url('lelum-sans-book-italic.svg#LelumSansBookItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lelum Sans Light";
-    src: font-url('lelum-sans-light.eot');
-    src: font-url('lelum-sans-light.eot?#iefix') format('embedded-opentype'),
-         font-url('lelum-sans-light.woff') format('woff'),
-         font-url('lelum-sans-light.ttf') format('truetype'),
-         font-url('lelum-sans-light.svg#LelumSansLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lelum Sans Light Italic";
-    src: font-url('lelum-sans-light-italic.eot');
-    src: font-url('lelum-sans-light-italic.eot?#iefix') format('embedded-opentype'),
-         font-url('lelum-sans-light-italic.woff') format('woff'),
-         font-url('lelum-sans-light-italic.ttf') format('truetype'),
-         font-url('lelum-sans-light-italic.svg#LelumSansLightItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 // Type Variables
-$font-heavy        : "Avenir Next Heavy",       sans-serif;
-$font-bold         : "Lelum Sans Bold",         sans-serif;
-$font-bold-italic  : "Lelum Sans Bold Italic",  sans-serif;
-$font-demi         : "Avenir Next Demi",        sans-serif;
-$font-medium       : "Avenir Next Medium",      sans-serif;
-$font-book         : "Lelum Sans Book",         sans-serif;
-$font-book-italic  : "Lelum Sans Book Italic",  sans-serif;
-$font-light        : "Lelum Sans Light",        sans-serif;
-$font-light-italic : "Lelum Sans Light Italic", sans-serif;
+$p22          : "p22-underground-sc",  sans-serif;
+$freight-sans : "freight-sans-pro",    sans-serif;
 
-$ss-social    : "SSSocial Regular"     sans-serif;
+$ss-social    : "SSSocial Regular",    sans-serif;
 $ss-circle    : "SSSocial Circle",     sans-serif;
 $ss-standard  : "SSStandard",          sans-serif;
 
-$base-font-family    : $font-book;
+$base-font-family    : $freight-sans;
 $base-font-size      : 16px;
 $base-line-height    : 2;
 
@@ -140,6 +20,37 @@ $reduced-line-height    : 1.8;
 $minor-font-size     : 13px;
 $compact-line-height : 1.35;
 
+// Weight and Style Mixins
+
+@mixin thin {
+  font-style: normal;
+  font-weight: 100;
+}
+
+@mixin book {
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin book-italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin bold {
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin bold-italic {
+  font-style: italic;
+  font-weight: 700;
+}
+
+@mixin heavy {
+  font-style: normal;
+  font-weight: 900;
+}
 
 // Headers
 h1, h2, h3, h4, h5, h6 {
@@ -150,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 60px;
-  font-family: $font-heavy;
+  font-family: $p22;
   letter-spacing: 4px;
   text-transform: uppercase;
 
@@ -162,21 +73,21 @@ h1 {
 
 h2 {
   font-size: 30px;
-  font-family: $font-medium;
+  font-family: $p22;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 h3 {
   font-size: 30px;
-  font-family: $font-light;
+  font-family: $p22;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
 
 h4 {
   font-size: 13px;
-  font-family: $font-demi;
+  font-family: $p22;
   letter-spacing: 1px;
   text-transform: uppercase;
 
@@ -190,16 +101,16 @@ h5 { }
 h6 { }
 
 b, strong {
-  font-family: $font-bold;
+  @include bold;
   em {
-    font-family: $font-bold-italic;
+    @include bold-italic;
   }
 }
 
 em {
-  font-family: $font-book-italic;
+  @include book-italic;
   b, strong {
-    font-family: $font-bold-italic;
+    @include bold-italic;
   }
 }
 
@@ -225,9 +136,9 @@ p {
 }
 
 q {
+  @include book-italic;
   display: block;
   font-size: 2 * $base-font-size;
-  font-family: $font-book-italic;
   line-height: $compact-line-height;
   text-align: left;
   margin: 26px 0 36px 0; // Top has less margin b/c of type line-heights
