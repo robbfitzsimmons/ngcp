@@ -42,6 +42,7 @@
 //= require "lib/html5shiv.3.6.2"
 //= require "lib/jquery.placeholder.2.0.8"
 //= require "lib/respond.1aa5f5fd"
+//= require "lib/typekit"
 
 //////////////////////////////////////////////////////////////////////////
 //                             GLOBAL CODE                              //
@@ -85,7 +86,7 @@ jQuery(function($){
 (function ($) {
   $.fn.tclick = function (onclick) {
     this.bind("touchstart", function (e) { onclick.call(this, e); e.stopPropagation(); e.preventDefault(); });
-    this.bind("click", function (e) { onclick.call(this, e); });   //substitute mousedown event for exact same result as touchstart         
+    this.bind("click", function (e) { onclick.call(this, e); });   //substitute mousedown event for exact same result as touchstart
     return this;
   };
 })(jQuery);
