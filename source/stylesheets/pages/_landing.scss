@@ -64,12 +64,6 @@
 \************************************************************************/
 .team-member {
   .professional-headshot { display: block; }
-  .fun-headshot { display: none; }
-
-  &:hover {
-    .professional-headshot { display: none; }
-    .fun-headshot { display: block; }
-  }
 
   .person-info {
     @include clearfix;
