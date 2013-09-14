@@ -9,9 +9,9 @@
 // This file should declare the necessary 3rd party libraries we use.
 // It is important to version all 3rd party libraries.
 //
-// It should also have all of the Work-Bench application code.
+// It should also have all of the Next Generation application code.
 //
-// When Work-Bench application code exceeds 100 lines it should be
+// When Next Generation application code exceeds 100 lines it should be
 // extracted out into individual files and `require`d from the index.
 //
 // KEEP THE INDEX CLEAN!
@@ -37,7 +37,7 @@
 //                             GLOBAL CODE                              //
 //////////////////////////////////////////////////////////////////////////
 
-// Any Work-bench specific global code you've written (helpers, etc), get
+// Any Next Generation specific global code you've written (helpers, etc), get
 // required here.
 
 //////////////////////////////////////////////////////////////////////////
