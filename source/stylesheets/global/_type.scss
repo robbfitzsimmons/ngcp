@@ -3,14 +3,13 @@
 \************************************************************************/
 
 // Type Variables
-$p22          : "p22-underground-sc",  sans-serif;
-$freight-sans : "freight-sans-pro",    sans-serif;
+$museo-sans   : "museo-sans",          sans-serif;
 
 $ss-social    : "SSSocial Regular",    sans-serif;
 $ss-circle    : "SSSocial Circle",     sans-serif;
 $ss-standard  : "SSStandard",          sans-serif;
 
-$base-font-family    : $freight-sans;
+$base-font-family    : $museo-sans;
 $base-font-size      : 16px;
 $base-line-height    : 2;
 
@@ -66,8 +65,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  @include heavy;
   font-size: 60px;
-  font-family: $p22;
+  font-family: $museo-sans;
   letter-spacing: 4px;
   text-transform: uppercase;
 
@@ -79,21 +79,21 @@ h1 {
 
 h2 {
   font-size: 30px;
-  font-family: $p22;
+  font-family: $museo-sans;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 h3 {
   font-size: 30px;
-  font-family: $p22;
+  font-family: $museo-sans;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
 
 h4 {
   font-size: 13px;
-  font-family: $p22;
+  font-family: $museo-sans;
   letter-spacing: 1px;
   text-transform: uppercase;
 
@@ -121,6 +121,7 @@ em {
 }
 
 p {
+  @include book;
   text-align: justify;
   margin-top: 1.5em;
 
@@ -142,7 +143,7 @@ p {
 }
 
 q {
-  @include book-italic;
+  @include book;
   display: block;
   font-size: 1.4 * $base-font-size;
   line-height: $compact-line-height;
