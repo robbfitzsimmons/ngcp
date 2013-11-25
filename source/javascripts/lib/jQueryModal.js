@@ -116,8 +116,8 @@
     this.$elm.css({
     position: 'fixed',
     overflow: 'auto',
-    height: '300px',
-    top: "80%",
+    height: '400px',
+    top: ($(window).height() - 150),
     left: "50%",
     marginTop: - (this.$elm.outerHeight() / 2),
     marginLeft: - (this.$elm.outerWidth() / 2),
