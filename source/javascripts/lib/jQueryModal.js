@@ -115,7 +115,9 @@
   center: function() {
     this.$elm.css({
     position: 'fixed',
-    top: "50%",
+    overflow: 'auto',
+    height: '300px',
+    top: "80%",
     left: "50%",
     marginTop: - (this.$elm.outerHeight() / 2),
     marginLeft: - (this.$elm.outerWidth() / 2),
