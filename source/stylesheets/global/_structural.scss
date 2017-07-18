@@ -121,7 +121,7 @@ hr {
 .core-content {
   margin: 0 auto;
   padding: 50px 0 60px 0; // Top has less padding b/c of type line-heights
-  width: 46%;
+  width: 70%;
 
   &.double-padded {
     padding: 100px 0 120px 0; // Less at top to account for headers' line height
@@ -129,7 +129,7 @@ hr {
 
   &.two-column-holder {
     @media screen and (max-width: $breakpoint_large_two_column) {
-      width: 60%;
+      width: 76%;
     }
     @media screen and (max-width: $breakpoint_medium) {
       width: 76%;
@@ -183,6 +183,50 @@ hr {
   .column-right {
     float: right;
     width: 45%;
+    @media screen and (max-width: $breakpoint_medium_two_column) {
+      float: none;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}
+
+.three-columns {
+  @include clearfix();
+  position: relative;
+
+  &.extra-margin {
+    margin-top: 60px;
+  }
+
+  &.some-margin {
+    margin-top: 30px;
+  }
+
+  .three-column-left {
+    float: left;
+    width: 30%;
+    margin: 10px;
+    @media screen and (max-width: $breakpoint_medium_two_column) {
+      float: none;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .three-column-center {
+    float: left;
+    width: 30%;
+    margin: 10px;
+    @media screen and (max-width: $breakpoint_medium_two_column) {
+      float: none;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .three-column-right {
+    float: left;
+    width: 30%;
+    margin: 10px;
     @media screen and (max-width: $breakpoint_medium_two_column) {
       float: none;
       width: 100%;
